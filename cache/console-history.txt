@@ -1,0 +1,6 @@
+exit()
+exit
+token.address
+token
+const token = await ethers.getContractAt("Token","0x5fbdb2315678afecb367f032d93f642f64180a")
+const token = await ethers.getContractAt("Token","0x5fbdb2315678afecb367f032d93f642f64180a"
