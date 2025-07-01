@@ -68,12 +68,12 @@ contract Token {
         require(allowance[_from][msg.sender] >= _value, "Allowance exceeded");
 
     
-    allowance[_from][msg.sender] -= _value;
+        allowance[_from][msg.sender] -= _value;
 
         //spend tokens
         _transfer(_from, _to, _value);
 
-        emit Transfer(_from, _to, _value);
+        // emit Transfer(_from, _to, _value);
         return true;
     }
 }
