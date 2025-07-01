@@ -37,8 +37,8 @@
       ]
     },
     "/home/adarsh/code/capstone/contracts/Token.sol": {
-      "lastModificationDate": 1751293088715,
-      "contentHash": "e631d9a31d337461241fd904383c9722",
+      "lastModificationDate": 1751373535923,
+      "contentHash": "dd330e1481d2270fee2dfbc3bdf00c41",
       "sourceName": "contracts/Token.sol",
       "solcConfig": {
         "version": "0.8.9",
