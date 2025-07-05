@@ -8,14 +8,16 @@ const tokens = (n) => {
 describe("Exchange", () => {
   let deployer, feeAccount,exchange;
 
+  const feePercent = 10;
+
   beforeEach(async () => {
 
     accounts = await ethers.getSigners();
     deployer = accounts[0];
-    feeAccount accounts[1];
+    feeAccount =  accounts[1];
 
     const Exchange = await ethers.getContractFactory("Exchange");
-    exchange = await Exchange.deploy(feeAccount.address);
+    exchange = await Exchange.deploy(feeAccount.address, feePercent);
     
   });
 
@@ -26,6 +28,9 @@ describe("Exchange", () => {
       expect(await exchange.feeAccount()).to.equal(feeAccount.address);
     });
 
+    it("tracks fee percent",async()=>{
+      expect(await exchange.feePercent()).to.equal(feePercent);
+    })
     
   });
 
