@@ -74,8 +74,8 @@
       ]
     },
     "/home/adarsh/code/capstone/contracts/Exchange.sol": {
-      "lastModificationDate": 1751720979854,
-      "contentHash": "61b8955c49a19981e2ed99c008396168",
+      "lastModificationDate": 1751725874965,
+      "contentHash": "088ae481bde7a5c65cdf068fbaeee643",
       "sourceName": "contracts/Exchange.sol",
       "solcConfig": {
         "version": "0.8.9",
@@ -101,7 +101,8 @@
         }
       },
       "imports": [
-        "hardhat/console.sol"
+        "hardhat/console.sol",
+        "./Token.sol"
       ],
       "versionPragmas": [
         "^0.8.0"
