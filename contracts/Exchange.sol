@@ -31,6 +31,9 @@ contract Exchange {
     }
 
     function withdrawToken(address _token, uint256 _amount) public{
+        //Ensure user has enough tokens to withdraw
+        require(tokens[_token][msg.sender] >= _amount);
+
         Token(_token).transfer(msg.sender, _amount);
 
         tokens[_token][msg.sender] -= _amount;
